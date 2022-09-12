@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <style>
+    body {
+      background: #fafafa;
+    }
+    host-element{
+            display:inline-block;
+            background-color:orange;
+        }
+    p{
+            font-family:sans-serif;
+        }
+  </style>
+</head>
+<body>
+  <div id="demo"></div>
+
+  <script type="module">
+    import { html, render } from 'lit';
+    import '../lit-open.js';
+  
+
+    const title = 'Hello owc World!';
+    render(
+      html`
+      `,
+      document.querySelector('#demo')
+    );
+  </script>
+   <elem-supe></elem-supe>
+
+   <h2>compartir Estilos</h2>
+   <sharing-style></sharing-style>
+
+   <shadow-tree></shadow-tree>
+   <host-element></host-element>
+   <p>-----</p>
+   <h1>Estilos Elemenot host</h1>
+   <host-element></host-element>
+   <host-element hidden></host-element>
+   <br>
+   <host-element class="blue"></host-element>
+   <p>parrafo</p>
+   <p>--------</p>
+
+
+</body>
+</html>
